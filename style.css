@@ -1,0 +1,788 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+
+
+.hero{
+    position:relative;
+    height: 100vh;
+    background: url(slika1.jpg);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.hero-content{
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 650px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+    position: relative;
+    z-index:2;
+    margin-bottom: 15px;
+}
+.hero-content h1{
+    font-size: 36px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+.hero-content p{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7)
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(255, 255,255,0.4);
+    
+}
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 15px 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5s);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    z-index:999;
+    box-shadow: 0 8px 32px rgba(0,0,0, 0.1);
+    backdrop-filter: blur(0.50px);
+    -webkit-backdrop-filter: blur(0.50);
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+ .nav-links a{
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+    }
+
+ .nav-btn{
+    background-color: #153717;
+    color:white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:all 0.3s ease;
+ }
+ .join-btn{
+    display: inline-block;
+    background-color: #153717;
+    color:white;
+    padding: 12px 24px;
+    border:none;
+    border-radius: 30px;
+    font-size:16px;
+    font-weight:600;
+    text-decoration: none;
+    margin-top:20px;
+    transition: all 0.3 ease;
+ }
+
+ .join-btn:hover{
+    background-color: #1f4d2e;
+    transform: scale(1.05);
+}
+.logo{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+ 
+.about-text.card{
+    background-color: rgba(44, 46, 62, 1);
+    width: 428px;
+    height: 255px;
+    border-radius: 16px;
+    padding: 24px 32px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: 50px;
+    position: relative;
+    left: 200px;
+}
+.about-text.card h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.about-text.card p{
+    font-size: 16px;
+    line-height: 1.4;
+    margin:0;
+}
+.card.stat{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(44,46,62,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 700px;
+    top: -250px;
+}
+ .card.stat h3{
+    position: relative;
+    font-size: 35px;
+    font-weight: bold;
+    left: -70px;;
+ }
+ .stat p{
+    position: relative;
+    margin-top: -100px;
+    left: -30px;
+
+
+ }
+.stat button{
+    background-color: #153717;
+    color:white;
+    padding: 12px 24px;
+    border:none;
+    border-radius: 30px;
+    font-size:16px;
+    font-weight:300;
+    text-decoration: none;
+    margin-top:20px;
+    transition: all 0.3 ease;
+    
+    
+}
+.stat button:hover{
+    background-color: rgba(29, 64, 32, 1);
+}
+.broj.planinara{
+    background-color: rgba(44, 46, 62, 1);
+    width: 230px;
+    height: 255px;
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: -500px;
+    position: relative;
+    left: 1000px;
+
+}
+.broj.planinara h3{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    left: -70px;
+
+}
+.broj.planinara p{
+    position:relative;
+    left: -70px;
+    margin-top: -20px;
+}
+.broj.planinara button{
+    background-color: #153717;
+    color:white;
+    padding: 12px 24px;
+    border:none;
+    border-radius: 30px;
+    font-size:16px;
+    font-weight:300;
+    text-decoration: none;
+    margin-top:90px;
+    transition: all 0.3 ease;
+}
+.about-image img{
+    width: 710px;
+    height: 255px;
+    border-radius: 16px;
+    position: relative;
+    left: 200px;
+    margin-top: 50px;
+}
+.kartica {
+    background-color: rgba(44, 46, 62, 1);
+    width: 230px;
+    height: 255px;
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    position: relative;
+    margin-top: -260px;
+    left: 1000px;
+    
+}
+.kartica h3{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    left: -70px;
+
+}
+.kartica p{
+    position:relative;
+    left: -80px;
+    margin-top: -20px;
+}
+.kartica button{
+    background-color: #153717;
+    color:white;
+    padding: 12px 24px;
+    border:none;
+    border-radius: 30px;
+    font-size:16px;
+    font-weight:300;
+    text-decoration: none;
+    margin-top:90px;
+    transition: all 0.3 ease;
+}
+.blog{
+    padding: 3rem 2rem;
+    background-color: #f5f5f5;
+
+}
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.blog h2{
+    font-size: 2rem;
+}
+.svi-clanci{
+    background-color: rgba(29, 64, 32, 1);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.blog-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.blog-card{
+    background-color: rgba(44, 46, 62, 1);
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.blog-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.blog-info{
+    padding: 1rem;
+}
+.blog-info p{
+    font-size: 0.9rem;
+    color: #ccc;
+}
+.next-trip-section{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    
+}
+.next-trip-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+   
+}
+.next-trip-header h2{
+    font-family: 'Titillium Web';
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    
+}
+.all-trips-btn{
+    background-color: rgba(29, 64, 32, 1);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    margin-left: auto;
+}
+.trip-card{
+    display: flex;
+    align-items: center;
+    gap:0px;
+    margin:0;
+    padding:0;
+    flex-wrap: wrap;
+    background-color: rgba(44, 46, 62, 1);
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 1000px;
+    position: relative;
+    left: 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.trip-image{
+    display: flex;
+    position: relative;
+    width:100%;
+    max-width: 500px;
+    border-radius: 16px 0 0 16px;
+    object-fit: cover;
+    
+    
+}
+.trip-info{
+    padding: 20px;
+    flex: 1;
+    max-width: 300px;
+}
+.trip-info h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.trip-info p{
+    margin-bottom: 20px;
+}
+.trip-info ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.trip-info ul li{
+    margin-bottom: 8px;
+}
+.trip-info h4{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.btn.prijava{
+    padding: 10px 20px;
+    background-color: #153717;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.btn.prijava:hover{
+    background-color: #1e4c27;
+}
+h2{
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 65px;
+    font-family: 'Titillium Web';
+    font-weight: 600;
+    font-size: 20px;
+}
+.trip-thumb{
+    width: 465px;
+    height: 146px;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    margin-top: 5px;
+   
+   
+}
+.comming-trips{
+    display: flex;
+    gap: 60px;
+}
+.image-wrapper{
+    position: relative;
+    display: inline-block;
+}
+.image-text{
+    position: relative;
+    margin-top: -50px;
+    bottom: 16px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px black;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+}
+.image-text h3{
+    position: relative;
+    margin-top: -75px;
+  
+}
+.image-text p{
+    position: relative;
+    margin-top: 80px;
+
+}
+.trip-overlay{
+    position: relative;
+    margin-top: -50px;
+    bottom: 16px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px black;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between; 
+}
+.trip-overlay h3{
+    position: relative;
+    margin-top: -75px;
+}
+.trip-overlay p{
+    position: relative;
+    margin-top: 80px;
+}
+/* Sekcija sa svim paketima */
+.paketi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+    gap: 40px;
+  }
+  
+  /* Naslov i podnaslov */
+  .naslov {
+    text-align: center;
+  }
+  
+  .naslov h2 {
+    font-family: 'Titillium Web';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0,1);
+  }
+  
+  .naslov p {
+    font-family: 'Titillium Web';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(0,0,1)
+  }
+  
+  /* Svi paketi u redu */
+  .paketi .paket {
+    background-color: #2d3748;
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* Sve 4 kutije u redu */
+  .paketi {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 600px) {
+    .paketi {
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* Naslov svakog paketa */
+  .paket h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Lista pogodnosti */
+  .paket ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .paket li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    
+  }
+  
+  /* Dugme */
+  .paket button {
+    background-color: #153717;
+    color:white;
+    padding: 12px 24px;
+    border:none;
+    border-radius: 30px;
+    font-size:16px;
+    font-weight:500;
+    text-decoration: none;
+    margin-top:90px;
+    transition: all 0.3 ease;
+  }
+  
+  .paket button:hover {
+    background-color: #1e4a20;
+  }
+  
+  /* Oznaka "Najpovoljnije" */
+  .oznaka {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2d3748;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  .paketi-container{
+    display: flex;
+    justify-content: center;
+    flex: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  .faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .faq-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #000;
+  }
+  
+  /* Reset details default arrow */
+ .faq-section details summary {
+    list-style: none;
+  }
+  
+  .faq-section details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+   .faq-section details {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .faq-section details[open] {
+    background: #1e293b;
+    color: #fff;
+  }
+  
+  /* Arrow icon */
+ .faq-section details summary::after {
+    content: '▾';
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    color: inherit;
+  }
+  
+ .faq-section  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+  
+ .faq-section details summary {
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 25px;
+  }
+  
+  .faq-section [open] summary {
+    margin-bottom: 10px;
+  }
+  
+ .faq-section  details p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .footer {
+    background-color: #2c2f3a;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left,
+  .newsletter-wrap,
+  .footer-right {
+    flex: 1;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .footer-left .logo {
+    height: 80px;
+  }
+  
+  .newsletter-wrap form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 150px;
+  }
+  
+  .newsletter-wrap input[type="email"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 35px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  .newsletter-wrap button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #153717;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;;
+  }
+  .newsletter-wrap button:hover{
+    background-color: #1f4d2e;
+  }
+  .footer-right p,
+  .footer-right a {
+    margin: 5px 0;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .footer-right .social-icons a {
+    color: white;
+    margin: 0 8px;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  
+  .footer-right .social-icons a:hover {
+    color: #90e0ef;
+  }
+  
+  .made-by {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  .footer-left{
+    text-align: center;
+  }
+  .footer-left .logo{
+    display: block;
+    margin: 0 auto 20px;
+    height: 80px;
+  }
+  .newsletter-wrap p{
+    margin-bottom: 10px;
+  }
+  .newsletter-wrap form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  
